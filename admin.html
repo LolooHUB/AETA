@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel Admin AETA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🔒 Panel Privado AETA</h1>
+  <div class="form-container">
+    <input type="password" id="password" placeholder="Contraseña">
+    <input type="text" id="nombre" placeholder="Nombre jugador">
+    <input type="number" id="ligas" placeholder="Ligas" min="0">
+    <input type="number" id="individuales" placeholder="Individuales" min="0">
+    <input type="number" id="segundosInd" placeholder="Segundos individual" min="0">
+    <input type="number" id="parejas" placeholder="Parejas" min="0">
+    <input type="number" id="segundosParejas" placeholder="Segundos parejas" min="0">
+    <input type="number" id="premios" placeholder="Premios" min="0">
+    <input type="number" id="partidos" placeholder="Partidos" min="0">
+    <button id="submitBtn">Registrar</button>
+    <p id="status"></p>
+  </div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
