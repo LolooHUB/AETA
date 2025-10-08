@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ranking AETA 🏆</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ranking AETA</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>🏆 Ranking AETA</h1>
-  <div id="ranking" class="ranking">Cargando ranking...</div>
+
+  <div class="ranking-container">
+    <table id="ranking">
+      <thead>
+        <tr>
+          <th>PERSONA</th>
+          <th>LIGAS</th>
+          <th>INDIVIDUAL</th>
+          <th>SEGUNDOS INDIV.</th>
+          <th>PAREJAS</th>
+          <th>SEGUNDOS PAREJAS</th>
+          <th>PREMIOS</th>
+          <th>PARTIDOS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas generadas por JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Registrar resultados (contraseña requerida)</h2>
+  <div class="form-container">
+    <input type="password" id="password" placeholder="Contraseña">
+    <input type="text" id="nombre" placeholder="Nombre jugador">
+    <input type="number" id="ligas" placeholder="Ligas" min="0">
+    <input type="number" id="individuales" placeholder="Individuales" min="0">
+    <input type="number" id="segundosInd" placeholder="Segundos individual" min="0">
+    <input type="number" id="parejas" placeholder="Parejas" min="0">
+    <input type="number" id="segundosParejas" placeholder="Segundos parejas" min="0">
+    <input type="number" id="premios" placeholder="Premios" min="0">
+    <input type="number" id="partidos" placeholder="Partidos" min="0">
+    <button id="submitBtn">Registrar</button>
+    <p id="status"></p>
+  </div>
 
   <script type="module" src="script.js"></script>
 </body>
