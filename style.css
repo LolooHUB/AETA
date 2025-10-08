@@ -1,50 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
 body {
+  font-family: 'Orbitron', sans-serif;
   background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
+  padding: 30px;
+}
+
+h1, h2 {
   text-align: center;
-  padding: 40px;
-}
-
-h1 {
-  font-size: 3rem;
-  letter-spacing: 3px;
-  text-shadow: 0 0 20px #00ffff;
-  margin-bottom: 30px;
-}
-
-.ranking {
-  max-width: 800px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
-}
-
-.jugador {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 15px 0;
-}
-
-.jugador:last-child {
-  border: none;
-}
-
-.nombre {
-  font-size: 1.4rem;
   color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
 }
 
-.datos {
-  font-size: 0.9rem;
-  color: #ccc;
+.ranking-container {
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+  overflow-x: auto;
 }
 
-.total {
-  font-size: 1.2rem;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+th {
+  background: rgba(0,255,255,0.2);
+  color: #00ffff;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) td {
+  background: rgba(255,255,255,0.05);
+}
+
+td {
   color: #fff;
-  text-shadow: 0 0 10px #00ffff;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+input, button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+button {
+  grid-column: span 2;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00cccc;
 }
