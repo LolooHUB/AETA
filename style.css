@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px #00ffff;
+  margin-bottom: 30px;
+}
+
+.ranking {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.jugador {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+}
+
+.jugador:last-child {
+  border: none;
+}
+
+.nombre {
+  font-size: 1.4rem;
+  color: #00ffff;
+}
+
+.datos {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.total {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 0 0 10px #00ffff;
+}
