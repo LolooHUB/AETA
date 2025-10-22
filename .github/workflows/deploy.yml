@@ -1,5 +1,8 @@
 name: Deploy AETA Web
-
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 on:
   push:
     branches:
